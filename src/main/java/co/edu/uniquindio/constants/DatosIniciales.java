@@ -39,19 +39,12 @@ public class DatosIniciales  implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) throws Exception {
-
-
-
-        /**
-        // Plantilla para quemar Admin
         Admin admin = new Admin();
         admin.setNombre("admin");
         admin.setUsername("admin123");
         admin.setPassword(passwordEncoder.encode("admin"));
         adminRepo.save(admin);
 
-
-        // Plantilla para quemar Usuario
         Usuario usuario = new Usuario();
         usuario.setNombre("usuario");
         usuario.setUsername("usuario123");
@@ -73,16 +66,11 @@ public class DatosIniciales  implements CommandLineRunner {
         usuarioRepo.save(usuario);
 
 
-
-         Plantilla para quemar artista
-
-
         Artista artista = new Artista();
         artista.setNombreArtistico("Lady Gaga");
         artista.setCanciones(new HashSet<>());
         artistaRepo.save(artista);
 
-        // Plantilla para quemar canciones
         Cancion cancion = new Cancion();
         cancion.setTitulo("Poker Face");
         cancion.setGeneroMusical(GeneroMusical.METAL);
@@ -92,6 +80,5 @@ public class DatosIniciales  implements CommandLineRunner {
         cancion.setUrlPortada("https://res.cloudinary.com/dehltwwbu/image/upload/v1762995936/Store-IT/ImagenesProductos/jik0rvxvjqmhopuqybvv.png");
         cancion.setDuracion("3:50");
         cancionRepo.save(cancion);
-*/
     }
 }

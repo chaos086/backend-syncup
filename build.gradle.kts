@@ -52,8 +52,7 @@ dependencies {
     // ==== Persistencia ====
     // Spring Boot JPA (para Hibernate y ORM).
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    // Driver JDBC para Oracle (versión 21.x).
-    implementation("com.oracle.database.jdbc:ojdbc11:21.9.0.0")
+    implementation("com.mysql:mysql-connector-j:8.1.0")
 
 
     // ==== Utilidades ====
