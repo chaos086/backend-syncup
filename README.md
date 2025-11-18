@@ -1,4 +1,4 @@
-# 🎵 Spoty - Motor de Recomendaciones Musicales
+# 🎵 JaSaka - Motor de Recomendaciones Musicales "Spotify-Universitario"
 
 **Universidad del Quindío - Estructura de Datos**  
 **Autor:** Alejandro Marín Hernández - Carlos Santiago Colorado - Karen Dahiana Martinez

@@ -15,9 +15,9 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * @see EnableAsync
  */
 @Configuration
-@EnableAsync    // Habilita la capacidad de ejecutar métodos en hilos separados (asíncronamente).
+@EnableAsync    // Habilita métodos en hilos separados (asíncronamente).
 public class AsyncConfig {
 
-    // Esta clase no requiere lógica interna; su propósito es únicamente habilitar la funcionalidad asíncrona
+    // Esta clase no requiere lógica interna; únicamente habilitar la funcionalidad asíncrona
     // a través de las anotaciones de Spring.
 }
