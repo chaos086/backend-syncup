@@ -16,6 +16,13 @@ public enum GeneroMusical {
     RAP,
     METAL,
     REGUE,
-    ELECTRONICA
+    ELECTRONICA,
+    BALADA,
+    TROPICAL,
+    CUMBIA,
+    POPULAR,
+    VALLENATO,
+    INSTRUMENTAL,
+
 
 }
