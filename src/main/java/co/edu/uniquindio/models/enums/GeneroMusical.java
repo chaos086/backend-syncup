@@ -21,7 +21,6 @@ public enum GeneroMusical {
     TROPICAL,
     CUMBIA,
     POPULAR,
-    VALLENATOS,
     INSTRUMENTAL,
 
 
