@@ -39,46 +39,46 @@ public class DatosIniciales  implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... args) throws Exception {
-        Admin admin = new Admin();
-        admin.setNombre("admin");
-        admin.setUsername("admin123");
-        admin.setPassword(passwordEncoder.encode("admin"));
-        adminRepo.save(admin);
-
-        Usuario usuario = new Usuario();
-        usuario.setNombre("usuario");
-        usuario.setUsername("usuario123");
-        usuario.setPassword(passwordEncoder.encode("usuario"));
-        usuario.setCancionesFavoritas(new LinkedList<>());
-        usuario.setUsuariosSeguidos(new LinkedList<>());
-
-
-
-        Usuario usuario2 = new Usuario();
-        usuario2.setNombre("usuario");
-        usuario2.setUsername("usuario321");
-        usuario2.setPassword(passwordEncoder.encode("usuario"));
-        usuario2.setCancionesFavoritas(new LinkedList<>());
-        usuario2.setUsuariosSeguidos(new LinkedList<>());
-        usuarioRepo.save(usuario2);
-
-        usuario.seguirUsuario(usuario2);
-        usuarioRepo.save(usuario);
-
-
-        Artista artista = new Artista();
-        artista.setNombreArtistico("Lady Gaga");
-        artista.setCanciones(new HashSet<>());
-        artistaRepo.save(artista);
-
-        Cancion cancion = new Cancion();
-        cancion.setTitulo("Poker Face");
-        cancion.setGeneroMusical(GeneroMusical.METAL);
-        cancion.setFechaLanzamiento(LocalDate.now());
-        cancion.setUrlCancion(null);
-        cancion.setArtistaPrincipal(artista);
-        cancion.setUrlPortada("https://res.cloudinary.com/dehltwwbu/image/upload/v1762995936/Store-IT/ImagenesProductos/jik0rvxvjqmhopuqybvv.png");
-        cancion.setDuracion("3:50");
-        cancionRepo.save(cancion);
+//        Admin admin = new Admin();
+//        admin.setNombre("admin");
+//        admin.setUsername("admin123");
+//        admin.setPassword(passwordEncoder.encode("admin"));
+//        adminRepo.save(admin);
+//
+//        Usuario usuario = new Usuario();
+//        usuario.setNombre("usuario");
+//        usuario.setUsername("usuario123");
+//        usuario.setPassword(passwordEncoder.encode("usuario"));
+//        usuario.setCancionesFavoritas(new LinkedList<>());
+//        usuario.setUsuariosSeguidos(new LinkedList<>());
+//
+//
+//
+//        Usuario usuario2 = new Usuario();
+//        usuario2.setNombre("usuario");
+//        usuario2.setUsername("usuario321");
+//        usuario2.setPassword(passwordEncoder.encode("usuario"));
+//        usuario2.setCancionesFavoritas(new LinkedList<>());
+//        usuario2.setUsuariosSeguidos(new LinkedList<>());
+//        usuarioRepo.save(usuario2);
+//
+//        usuario.seguirUsuario(usuario2);
+//        usuarioRepo.save(usuario);
+//
+//
+//        Artista artista = new Artista();
+//        artista.setNombreArtistico("Lady Gaga");
+//        artista.setCanciones(new HashSet<>());
+//        artistaRepo.save(artista);
+//
+//        Cancion cancion = new Cancion();
+//        cancion.setTitulo("Poker Face");
+//        cancion.setGeneroMusical(GeneroMusical.METAL);
+//        cancion.setFechaLanzamiento(LocalDate.now());
+//        cancion.setUrlCancion(null);
+//        cancion.setArtistaPrincipal(artista);
+//        cancion.setUrlPortada("https://res.cloudinary.com/dehltwwbu/image/upload/v1762995936/Store-IT/ImagenesProductos/jik0rvxvjqmhopuqybvv.png");
+//        cancion.setDuracion("3:50");
+//        cancionRepo.save(cancion);
     }
 }
